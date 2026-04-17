@@ -8,7 +8,7 @@ export default function Nav({ onAssistance, onMobileMenu }: NavProps) {
     <nav className="fixed w-full z-50 gloss" style={{ borderBottom: "1px solid rgba(255,255,255,0.05)" }}>
       <div style={{ maxWidth: "80rem", margin: "0 auto", padding: "1rem 1.5rem", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <div className="display-font" style={{ fontSize: "1.5rem", fontWeight: 500, letterSpacing: "-0.02em", color: "white" }}>
-          FOREVERNEW
+          FOREVER NEW<span style={{ color: "#00FF88" }}>.COM</span>
         </div>
         <div style={{ display: "none" }} className="md-nav">
           <div style={{ display: "flex", alignItems: "center", gap: "2rem" }}>
