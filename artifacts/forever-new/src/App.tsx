@@ -76,7 +76,7 @@ export default function App() {
         onBranchSelect={openBranch}
       />
 
-      <BranchModal open={branchOpen} onClose={() => setBranchOpen(false)} />
+      <BranchModal open={branchOpen ?? false} onClose={() => setBranchOpen(false)} />
 
       <StickyAssist visible={stickyVisible} />
     </div>
