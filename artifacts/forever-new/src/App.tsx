@@ -12,7 +12,7 @@ import MobileMenu from "@/components/MobileMenu";
 
 export default function App() {
   const [fabOpen, setFabOpen] = useState(false);
-  const [branchOpen, setBranchOpen] = useState<boolean|null>(false);
+  const [branchOpen, setBranchOpen] = useState<boolean | null>(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [stickyVisible, setStickyVisible] = useState(false);
   const collectionsRef = useRef<HTMLElement>(null!);
