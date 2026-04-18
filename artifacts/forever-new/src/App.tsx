@@ -51,12 +51,12 @@ export default function App() {
     setBranchOpen(true);
     setFabOpen(false);
     setMobileMenuOpen(false);
-  };!
+  };
 
   return (
     <div className="antialiased" style={{ background: "#0A0A0A", color: "#E0E0E0" }}>
       <Nav
-        onAssistance!={openBranch}
+        onAssistance={openBranch}
         onMobileMenu={() => setMobileMenuOpen(true)}
       />
       <MobileMenu
@@ -65,7 +65,7 @@ export default function App() {
         onAssistance={openBranch}
       />
       <Hero onVip={openBranch} />
-      <Collections collectionsRef!={collectionsRef} />
+      <Collections collectionsRef={collectionsRef} />
       <ShoeVault />
       <Locations onSelectBranch={openBranch} />
       <Footer />
