@@ -15,7 +15,7 @@ export default function App() {
   const [branchOpen, setBranchOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [stickyVisible, setStickyVisible] = useState(false);
-  const collectionsRef = useRef<HTMLElement>(null);
+  const collectionsRef = useRef<HTMLElement>(null!);
 
   // Scroll reveal
   useEffect(() => {
@@ -65,7 +65,7 @@ export default function App() {
         onAssistance={openBranch}
       />
       <Hero onVip={openBranch} />
-      <Collections collectionsRef={collectionsRef} />
+      <Collections collectionsRef!={collectionsRef} />
       <ShoeVault />
       <Locations onSelectBranch={openBranch} />
       <Footer />
